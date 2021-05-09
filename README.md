@@ -13,17 +13,27 @@
 #### react native navigation === router
 - $ npm install @react-navigation/native
 
+##### navigation -> bottom tabs
+- $ npm install @react-navigation/botton-tabs
+- $ npm i @react-navigation/material-bottom-tabs
+
 #### @react-navigation/stack
  - $npm install @react-navigation/stack
 
 #### react-native-screens
 - $ npm i react-native-screens
 
+#### react-native-paper
+- $ npm i react-native-paper
+
 #### react-native-gesture-handler
 - $ npm i react-native-gesture-handler
 
 #### @react-native-community/masked-view
 - $ npm i @react-native-community/masked-view
+
+#### icons
+- $ npm i react-native-vector-icons
 
 #### redux
 - $ npm i redux
