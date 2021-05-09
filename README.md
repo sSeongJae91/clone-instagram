@@ -25,6 +25,11 @@
 #### @react-native-community/masked-view
 - $ npm i @react-native-community/masked-view
 
+#### redux
+- $ npm i redux
+- $ npm i react-redux
+- $ npm i redux-thunk
+
 #### firebase
  - $ npm install --save firebase
 
