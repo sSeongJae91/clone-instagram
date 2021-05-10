@@ -41,7 +41,13 @@
 - $ npm i redux-thunk
 
 #### firebase
- - $ npm install --save firebase
+- $ npm install --save firebase
+
+#### camera
+- $ expo install expo-camera
+
+#### imagePicker
+- $ expo install expo-image-picker
 
 
 ### extensions
