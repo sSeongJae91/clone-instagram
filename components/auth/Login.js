@@ -19,7 +19,7 @@ export class Login extends Component {
     onSignIn() {
         const { email, password, name } = this.state;
 
-        console.log("sdfdsfsdfd : " + firebase);
+        // console.log("sdfdsfsdfd : " + firebase);
 
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then((result) => {

@@ -19,7 +19,7 @@ export function fetchUser() {
     })
 }
 
-export function fetchUserPost() {
+export function fetchUserPosts() {
     return ((dispatch) => {
         firebase.firestore()
             .collection("posts")
@@ -34,8 +34,8 @@ export function fetchUserPost() {
 
                     return { id, ...data }
                 })
-                console.log(posts);
-                dispatch({ type: USER_POSTS_STATE_CHANGE, posts: snapshot });
+
+                dispatch({ type: USER_POSTS_STATE_CHANGE, posts });
             })
     })
 }

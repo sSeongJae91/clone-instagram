@@ -4,6 +4,7 @@ import { StyleSheet, View, Text, Image, FlatList } from 'react-native';
 import { connect } from 'react-redux';
 
 function Profile(props) {
+    console.log("profile : ", props);
     const { currentUser, posts } = props;
 
     console.log({currentUser, posts});
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
 })
 
 const mapStateToProps = (store) => ({
-    currnetUser: store.userState.currnetUser,
+    currentUser: store.userState.currentUser,
     posts: store.userState.posts
 })
 
