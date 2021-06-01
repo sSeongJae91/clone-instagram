@@ -49,6 +49,9 @@
 #### imagePicker
 - $ expo install expo-image-picker
 
+#### cors error(proxy)
+- $ npm install http-proxy-middleware
+
 
 ### extensions
 - ES7 React/Redux/GraphQL/React-Native snippets

@@ -14,6 +14,7 @@ export default function Feed() {
         <View>
             <Text>Feed</Text>
             <Button 
+                title="logout"
                 onPress={() => {onSignOut()}}
             />
         </View>

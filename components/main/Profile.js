@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StyleSheet, View, Text, Image, FlatList } from 'react-native';
 
 import { connect } from 'react-redux';
 
 function Profile(props) {
-    console.log("profile : ", props);
     const { currentUser, posts } = props;
 
     console.log({currentUser, posts});

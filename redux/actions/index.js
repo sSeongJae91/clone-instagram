@@ -3,6 +3,7 @@ import firebase from 'firebase';
 import { USER_STATE_CHANGE, USER_POSTS_STATE_CHANGE } from '../constants/index';
 
 export function fetchUser() {
+    console.log("uid : ", firebase.auth().currentUser.uid);
     return ((dispatch) => {
         firebase.firestore()
             .collection("users")
