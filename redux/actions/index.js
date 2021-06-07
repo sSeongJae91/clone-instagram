@@ -76,7 +76,7 @@ export function fetchUsersData(uid) {
                     let user = snapshot.data();
                     user.uid = snapshot.id;
 
-                    dispatch({type: USERS_DATA_STATE_CHANGE, currentUser: user});
+                    dispatch({type: USERS_DATA_STATE_CHANGE, user});
                     dispatch(fetchUsersFollowingPosts(uid));
                 }else {
                     console.log('does not exist')
@@ -100,8 +100,7 @@ export function fetchUsersFollowingPosts(uid) {
                 // const uid = snapshot.docs[0].ref.path.split('/')[1];
                 const uid = snapshot._delegate.query._query.path.segments[1];
                 console.log({snapshot, uid});
-                const user = getState().usersState.users.find(el => {
-                    el.uid === uid});
+                const user = getState().usersState.users.find(el => el.uid === uid);
 
                 let posts = snapshot.docs.map(doc => {
                     const data = doc.data();
