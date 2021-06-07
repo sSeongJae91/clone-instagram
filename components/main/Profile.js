@@ -60,7 +60,7 @@ function Profile(props) {
             .collection("following")
             .doc(firebase.auth().currentUser.uid)
             .collection("userFollowing")
-            doc(props.route.params.uid)
+            .doc(props.route.params.uid)
             .set({})
     }
 
